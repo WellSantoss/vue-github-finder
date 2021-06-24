@@ -1,28 +1,42 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-container>
+      <v-row>
+        <v-col cols="12" align="center">
+          <h1>Github Finder</h1>
+          <p>Pesquise por perfis do GitHub</p>
+        </v-col>
+
+        <v-col cols="12" align="center">
+          <v-col cols="6" align="center">
+            <v-text-field
+              label="Perfil do GitHub"
+              outlined
+              dense
+            ></v-text-field>
+
+            <v-btn depressed color="primary"> Pesquisar </v-btn>
+          </v-col>
+        </v-col>
+      </v-row>
+    </v-container>
+    <UserProfile />
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import UserProfile from "./components/UserProfile.vue";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
+  name: "App",
+  data: () => ({
+    user: null,
+  }),
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  methods: {},
+
+  components: {
+    UserProfile,
+  },
+};
+</script>
