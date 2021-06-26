@@ -1,24 +1,33 @@
-# vue-github-finder
+# GitHub Finder
 
-## Project setup
-```
-npm install
-```
+## Sobre
+A aplicação consome a API do GitHub e retorna os dados do usuário e dos repositórios do perfil pesquisado.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+---
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Resultado
+[![Image from Gyazo](https://i.gyazo.com/8063ad022eb71fbff7fb6ad4ebb923e4.png)](https://gyazo.com/8063ad022eb71fbff7fb6ad4ebb923e4)
 
-### Lints and fixes files
-```
-npm run lint
-```
+Resultado final: https://heuristic-mahavira-4b13da.netlify.app/
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+---
+
+## Instalação
+```
+- Clone o repositório
+$ git clone https://github.com/WellSantoss/vue-github-finder.git
+
+- Entre na pasta do projeto
+$ cd vue-github-finder
+
+- Instale as dependências
+$ npm install
+
+- Inicie o servidor 
+$ npm run serve
+```
+---
+
+## Tecnologias utilizadas
+- Vue.js;
+- Vuetify.js.
